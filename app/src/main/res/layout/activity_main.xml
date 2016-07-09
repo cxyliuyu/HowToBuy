@@ -1,11 +1,124 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
-    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
-    android:paddingRight="@dimen/activity_horizontal_margin"
-    android:paddingTop="@dimen/activity_vertical_margin"
-    android:paddingBottom="@dimen/activity_vertical_margin" tools:context=".MainActivity">
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".MainActivity"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/backgray">
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="14">
+    </FrameLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="@color/linegray"></View>
 
-    <TextView android:text="Hello World!" android:layout_width="wrap_content"
-        android:layout_height="wrap_content" />
-</RelativeLayout>
+    <LinearLayout
+        android:background="@color/white"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_weight="1">
+            <ImageView
+                android:id="@+id/tab_home_icon"
+                style="@style/TabIcon"
+                android:src="@drawable/icon_home"/>
+            <TextView
+                style="@style/TabText"
+                android:id="@+id/tab_home_text"
+                android:text="首页"
+                android:layout_below="@id/tab_home_icon"/>
+            <ImageView
+                android:id="@+id/tab_home_line"
+                style="@style/TabLine" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_weight="1">
+            <ImageView
+                style="@style/TabIcon"
+                android:id="@+id/tab_flight_icon"
+                android:src="@drawable/icon_flight"/>
+            <TextView
+                style="@style/TabText"
+                android:id="@+id/tab_flight_text"
+                android:text="好价"
+                android:layout_below="@id/tab_flight_icon"
+                />
+            <ImageView
+                android:id="@+id/tab_flight_line"
+                style="@style/TabLine" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_weight="1">
+            <ImageView
+                style="@style/TabIcon"
+                android:id="@+id/tab_bag_icon"
+                android:src="@drawable/icon_bag"/>
+            <TextView
+                style="@style/TabText"
+                android:id="@+id/tab_bag_text"
+                android:text="好物"
+                android:layout_below="@id/tab_bag_icon"
+                />
+            <ImageView
+                android:id="@+id/tab_bag_line"
+                style="@style/TabLine" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_weight="1">
+            <ImageView
+                style="@style/TabIcon"
+                android:id="@+id/tab_article_icon"
+                android:layout_height="20dp"
+                android:src="@drawable/icon_article" />
+            <TextView
+                style="@style/TabText"
+                android:id="@+id/tab_article_text"
+                android:text="好文"
+                android:layout_below="@id/tab_article_icon"
+                />
+            <ImageView
+                android:id="@+id/tab_article_line"
+                style="@style/TabLine" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_weight="1">
+            <ImageView
+                style="@style/TabIcon"
+                android:id="@+id/tab_person_icon"
+                android:layout_height="20dp"
+                android:src="@drawable/icon_people"/>
+            <TextView
+                style="@style/TabText"
+                android:id="@+id/tab_person_text"
+                android:text="我的"
+                android:layout_below="@id/tab_person_icon"
+                />
+            <ImageView
+                android:id="@+id/tab_person_line"
+                style="@style/TabLine" />
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</LinearLayout>
