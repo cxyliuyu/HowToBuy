@@ -2,9 +2,42 @@
 <LinearLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
-    <TextView
+    android:layout_height="match_parent"
+    android:background="@color/backgray"
+    android:orientation="vertical">
+    <include
+        layout="@layout/toolbar_default"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="首页"/>
+        android:layout_height="60dp" />
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="190dp">
+                <android.support.v4.view.ViewPager
+                    android:id="@+id/viewpager_home"
+                    android:layout_width="match_parent"
+                    android:background="@color/white"
+                    android:layout_height="190dp">
+                </android.support.v4.view.ViewPager>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:orientation="horizontal"
+                    android:layout_gravity="center_horizontal|bottom">
+                    <ImageView
+                        android:layout_width="0dp"
+                        android:layout_height="30dp"
+                        android:layout_weight="1"/>
+                </LinearLayout>
+            </FrameLayout>
+
+        </LinearLayout>
+    </ScrollView>
 </LinearLayout>
