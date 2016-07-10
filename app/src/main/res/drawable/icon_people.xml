@@ -2,7 +2,7 @@
 <selector xmlns:android="http://schemas.android.com/apk/res/android">
     <item
         android:drawable="@mipmap/people_y"
-        android:state_checked="true">
+        android:state_selected="true">
     </item>
     <item android:drawable="@mipmap/people_n"></item>
 </selector>

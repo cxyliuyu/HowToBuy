@@ -36,10 +36,10 @@ public class FragmentController {
     private void initFragment(){
         fragments = new ArrayList<Fragment>();
         fragments.add(new HomeFragment());
-        fragments.add(new HomeFragment());
-        fragments.add(new HomeFragment());
-        fragments.add(new HomeFragment());
-        fragments.add(new HomeFragment());
+        fragments.add(new FlightFragment());
+        fragments.add(new BagFragment());
+        fragments.add(new ArticleFragment());
+        fragments.add(new PersonFragment());
 
         FragmentTransaction ft = fm.beginTransaction();
         for(Fragment fragment :fragments){

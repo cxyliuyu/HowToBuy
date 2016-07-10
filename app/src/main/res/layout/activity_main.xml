@@ -8,6 +8,7 @@
     android:layout_height="match_parent"
     android:background="@color/backgray">
     <FrameLayout
+        android:id="@+id/fragment_layout"
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_weight="14">
@@ -26,11 +27,13 @@
         <RelativeLayout
             android:layout_width="0dp"
             android:layout_height="50dp"
-            android:layout_weight="1">
+            android:layout_weight="1"
+            android:id="@+id/tab_home_layout">
             <ImageView
                 android:id="@+id/tab_home_icon"
                 style="@style/TabIcon"
-                android:src="@drawable/icon_home"/>
+                android:state_checkable="true"
+                android:background="@drawable/icon_home"/>
             <TextView
                 style="@style/TabText"
                 android:id="@+id/tab_home_text"
@@ -44,11 +47,12 @@
         <RelativeLayout
             android:layout_width="0dp"
             android:layout_height="50dp"
-            android:layout_weight="1">
+            android:layout_weight="1"
+            android:id="@+id/tab_flight_layout">
             <ImageView
                 style="@style/TabIcon"
                 android:id="@+id/tab_flight_icon"
-                android:src="@drawable/icon_flight"/>
+                android:background="@drawable/icon_flight"/>
             <TextView
                 style="@style/TabText"
                 android:id="@+id/tab_flight_text"
@@ -63,11 +67,12 @@
         <RelativeLayout
             android:layout_width="0dp"
             android:layout_height="50dp"
-            android:layout_weight="1">
+            android:layout_weight="1"
+            android:id="@+id/tab_bag_layout">
             <ImageView
                 style="@style/TabIcon"
                 android:id="@+id/tab_bag_icon"
-                android:src="@drawable/icon_bag"/>
+                android:background="@drawable/icon_bag"/>
             <TextView
                 style="@style/TabText"
                 android:id="@+id/tab_bag_text"
@@ -82,12 +87,13 @@
         <RelativeLayout
             android:layout_width="0dp"
             android:layout_height="50dp"
-            android:layout_weight="1">
+            android:layout_weight="1"
+            android:id="@+id/tab_article_layout">
             <ImageView
                 style="@style/TabIcon"
                 android:id="@+id/tab_article_icon"
                 android:layout_height="20dp"
-                android:src="@drawable/icon_article" />
+                android:background="@drawable/icon_article" />
             <TextView
                 style="@style/TabText"
                 android:id="@+id/tab_article_text"
@@ -102,12 +108,13 @@
         <RelativeLayout
             android:layout_width="0dp"
             android:layout_height="50dp"
-            android:layout_weight="1">
+            android:layout_weight="1"
+            android:id="@+id/tab_person_layout">
             <ImageView
                 style="@style/TabIcon"
                 android:id="@+id/tab_person_icon"
                 android:layout_height="20dp"
-                android:src="@drawable/icon_people"/>
+                android:background="@drawable/icon_people"/>
             <TextView
                 style="@style/TabText"
                 android:id="@+id/tab_person_text"
