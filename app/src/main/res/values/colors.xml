@@ -214,4 +214,7 @@
     <color name="backgray">#eeeeee</color>
     <color name="toolbarRed">#f04848</color>
     <color name="notcheck">#bebebe</color>
+    <color name="transparent">#00000000</color>
+    <color name="text_gray">#a4a4a4</color>
+
 </resources>

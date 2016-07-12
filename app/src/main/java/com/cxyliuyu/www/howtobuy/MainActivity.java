@@ -42,8 +42,6 @@ public class MainActivity extends FragmentActivity {
         selectTab(0);
     }
 
-
-
     class TabOnClickListener implements View.OnClickListener{
         @Override
         public void onClick(View v) {
